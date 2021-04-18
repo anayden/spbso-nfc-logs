@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  nfc-logs:
+    image: spbso-nfc-logs
+    ports:
+    - 8080:80
+    volumes:
+    - /home/so/spbso-nfc-logs/cards:/var/log/cards

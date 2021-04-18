@@ -5,7 +5,7 @@ app = FastAPI()
 
 
 def write_notification(card_id: str):
-    with open("/var/log/cards.csv", mode="a") as logfile:
+    with open("/var/log/cards/cards.csv", mode="a") as logfile:
         content = f"{datetime.now()},{card_id}\n"
         logfile.write(content)
 
